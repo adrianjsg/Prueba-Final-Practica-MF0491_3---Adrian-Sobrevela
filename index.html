@@ -1,0 +1,58 @@
+<!--
+Autor: [Adrián Sobrevela]
+Fecha: [13/04/2024]
+Descripción: [Prueba-Final-Practica-MF0491_3---Adrian-Sobrevela]
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Contenido Nutricional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Contenido Nutricional</h1>
+    </header>
+    <main>
+        <section id="alimentos">
+            <h2>Agregar Alimentos Consumidos:</h2>
+            <!-- Se insertarán los campos de entrada dinámicamente mediante JavaScript -->
+            <button id="agregar-alimento">Agregar Alimento</button>
+        </section>
+        <section id="objetivos">
+            <h2>Objetivos Calóricos:</h2>
+            <label for="objetivo-calorico">Objetivo Calórico Diario:</label>
+            <input type="number" id="objetivo-calorico" placeholder="Ingrese su objetivo calórico diario">
+            <label for="genero">Género:</label>
+            <select id="genero">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+            </select>
+            <label for="nivel-actividad">Nivel de Actividad:</label>
+            <select id="nivel-actividad">
+                <option value="sedentario">Sedentario</option>
+                <option value="activo">Activo</option>
+            </select>
+        </section>
+        <button id="calcular-contenido">Calcular Contenido Nutricional</button>
+        <button id="aumentar-tamano-fuente">Aumentar Tamaño de Fuente</button>
+        <button id="disminuir-tamano-fuente">Disminuir Tamaño de Fuente</button>
+        <section id="resultados">
+            <!-- Aquí se mostrarán los resultados del cálculo -->
+        </section>
+    </main>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=4Gc4XGnLa4Y" frameborder="0" allowfullscreen></iframe>
+
+    <footer>
+        
+        <p>&copy; 2024 Calculadora de Contenido Nutricional</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

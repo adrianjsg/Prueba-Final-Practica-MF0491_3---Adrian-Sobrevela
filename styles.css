@@ -1,0 +1,95 @@
+/*
+Autor: [Adrián Sobrevela]
+Fecha: [13/04/2021]
+Descripción: [Prueba-Final-Practica-MF0491_3---Adrian-Sobrevela]
+*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color:#ACE2E1 ;
+}
+
+header {
+    background-color: #008DDA;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #41C9E2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5356FF;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Definición de la animación en keyframes para cambiar de color */
+@keyframes cambiaColorNumero {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: green; }
+}
+
+/* Estilos para el número animado */
+#numeroAnimado {
+    position: absolute;
+    left: 0; /* Posición a la izquierda del botón */
+    animation-name: cambiaColorNumero; /* Nombre de la animación */
+    animation-duration: 3s; /* Duración de la animación (en segundos) */
+    animation-iteration-count: infinite; /* Repetir la animación infinitamente */
+}
+
+/* Estilos para el botón */
+#agregar-alimento {
+    margin-left: 20px; /* Margen para separar el número del botón */
+}
+
+
+
+/* Media query para ajustar el diseño en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reducir el tamaño de la fuente para dispositivos más pequeños */
+    }
+}
+
+footer {
+    background-color: #F7EEDD; /* Color del pie de página */
+    padding: 20px;
+    text-align: center;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold; 
+}
